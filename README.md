@@ -1,28 +1,88 @@
-# RhinoBot: The music bot for Discord.
+<h1 align="center">SharpBot</h1>
 
-MusicBot is a Discord music bot written in [Python](https://www.python.org "Python homepage"). It plays requested songs and if the queue becomes empty it will play through a list of existing songs.
+[![Patreon](http://ionicabizau.github.io/badges/patreon.svg)](https://patreon.com/Rayzr522)
+[![Discord Badge](https://discordapp.com/api/guilds/282207139752050688/embed.png)](https://discord.io/rayzrdevofficial)
 
-### How do I set it up?
+**SharpBot** is an ever-expanding [Discord](http://discordapp.com) selfbot written with [discord.js](https://discord.js.org/#/) that has a bunch of fun and useful commands.
 
-[CLICK HERE](https://github.com/SexualRhinoceros/MusicBot/wiki) to find the guide that suites your operating system.
+![SharpBot installer GIF](/res/sharpbot-install.gif)
 
-### Commands
+### [FAQ](FAQ.md)
+### [Commands](COMMANDS.md)
 
-Commands are listed [here](https://github.com/SexualRhinoceros/MusicBot/wiki/Commands "Commands list").
+> If you're worried about getting banned or otherwised punished by Discord for using a selfbot, or you just haven't read the rules yet, see [here](https://github.com/RayzrDev/SharpBot/wiki/SelfBot-Rules).
 
-### Configuration
+#### Table of contents
+- [Requirements](#requirements)
+- [Installing](#installing)
+- [Updating](#updating)
+- [Running](#running)
+- [Getting your user-token](#getting-your-user-token)
+- [Credits](#credits)
+- [Join Me](#join-me)
 
-The main configuration file is `config/options.ini`, but is not included.  Simply make a copy of `example_options.ini` and rename to `options.ini`.  See `example_options.ini` for more information on how to configure it.
+## Usage
+### Requirements
+- `git` ([Windows](https://git-scm.com/download/win) | [Linux](https://git-scm.com/download/linux) | [macOS](https://git-scm.com/download/mac))
+- `node` ([Windows](https://nodejs.org/en/download/current/) | [Linux](https://nodejs.org/en/download/package-manager/) | [macOS](https://nodejs.org/en/download/current/))
+- `yarn` ([Windows](https://yarnpkg.com/en/docs/install#windows-tab) | [Linux](https://yarnpkg.com/en/docs/install#linux-tab) | [macOS](https://yarnpkg.com/en/docs/install#mac-tab))
 
-[CLICK HERE](https://github.com/SexualRhinoceros/MusicBot/wiki/Configuration) for more details.
+> If you want a simple reason to use `yarn` instead of `npm`, see [here](https://github.com/RayzrDev/SharpBot/wiki/Why-Yarn%3F).
 
-### Great, now how do I use it?
-Download the bot, set the dependencies up, then run `runbot.bat`! (or `run.sh` on mac/linux)  Read the tutorial if you don't know what to do.
+### Installing
+#### Linux & macOS quick-installer
+For those of you running Linux/Unix, this nifty little command should do everything for you:
 
-If you have any errors, read the FAQ. If that didn't help, you can ask for assistance on the discord help server. Is is recommended to take screenshots so the developers can see errors.
+    curl -fsSL https://rawgit.com/RayzrDev/SharpBot-installer/master/install.sh | bash -
 
-[Rhino Help Server](http://discord.me/rhinohelp "Discord link")
+#### Normal installation
+```
+# Download the bot
+git clone https://github.com/RayzrDev/SharpBot.git
+# Enter the bot folder
+cd SharpBot
+# Install dependencies
+yarn install
+```
 
-### FAQ
+Now run `yarn start` to start the bot. 
 
-Some frequently asked questions are listed on the wiki [here](https://github.com/SexualRhinoceros/MusicBot/wiki/FAQ "Wiki").
+**Note:** The first time you start the bot you will enter the setup wizard. It takes just a few seconds to enter the needed information, and it sets up the bot for you.
+
+### Updating
+Minor updates can be acquired by running `//exec git pull` in Discord to run the `git pull` command on your computer. Some updates, however, change too much to be updated like that, and instead you must do the following commands in your terminal/command prompt:
+
+```bash
+# Go to the SharpBot folder
+cd path/to/SharpBot
+# Pull in any changes
+git pull
+# Install new dependencies
+yarn install
+```
+
+### Running
+```
+# Go to the SharpBot folder
+cd path/to/SharpBot
+# Start the bot up
+yarn start
+```
+
+### Getting your user-token
+1. Hit `CTRL+SHIFT+I` (`CMD+ALT+I` on macOS) to bring up the Developers Console
+> If you already see the `Application` tab, you can skip step 2
+2. At the top, click on the arrow pointing to the right
+3. Click `Application`
+4. Go to `Local Storage` under the `Storage` section
+5. Click on `https://discordapp.com`
+6. At the bottom of the list, the last key should be `token`
+7. Copy the value on the right side (omitting the quotes)
+
+## Credits
+The bot was originally a modified version of [eslachance's djs-selfbot-v9](https://github.com/eslachance/djs-selfbot-v9), but over time I've completely rewritten it. The commands are a compilation of my own work as well as snippets found online.
+
+## Join Me
+If you need help with my bot, have a feature to request or just want to chat, you can join my Discord server! If you don't have Discord, don't worry. It only takes a few moments to sign up.
+
+[![Discord Badge](https://github.com/Rayzr522/ProjectResources/raw/master/RayzrDev/badge-small.png)](https://discord.io/rayzrdevofficial)

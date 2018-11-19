@@ -1,10 +1,10 @@
-.idea/
-*.pyc
-~*/
+.DS_Store
+*.log
+node_modules/
 
-audio_cache/
-dectalk/
-
-discord.log
-config/options.ini
-config/permissions.ini
+# Data files/folders
+data/
+*.sqlite
+src/config.json
+/config.json
+.idea
